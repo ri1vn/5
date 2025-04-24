@@ -17,33 +17,29 @@ body {
 }
 
 h1 {
-  font-size: 5rem;
+  font-size: 5rem; /* default for desktops */
   color: white;
   text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.5);
   animation: fadeIn 2s ease-in-out, glow 3s ease-in-out infinite alternate;
+  text-align: center;
+  padding: 0 1rem;
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: scale(0.9);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1);
+/* For phones (width 768px and below) */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 3rem;
   }
 }
 
-@keyframes glow {
-  from {
-    text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff;
-  }
-  to {
-    text-shadow: 0 0 20px #00e0ff, 0 0 40px #00e0ff;
+/* For very small phones (width 480px and below) */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2.2rem;
   }
 }
 </style>
 <body>
-  <h1>Fuck You </h1>
+  <h1>FUCK YOU !</h1>
 </body>
 </html>
